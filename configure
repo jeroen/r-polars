@@ -103,7 +103,7 @@ check_bin_lib() {
 
 check_darwin() {
   if [ "$(uname)" = "Darwin" ]; then
-    ADDITIONAL_PKG_LIBS_FLAG=""
+    ADDITIONAL_PKG_LIBS_FLAG="-framework SystemConfiguration"
   fi
 }
 
